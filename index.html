@@ -126,6 +126,65 @@
          </code>
         </pre>
         <br>
+        <!-- Animated Button Start -->
+        <br>
+        <p class="grad-btn-title">4. Animated Button</p>
+        <br>
+        <br>
+        <a class="animbtn" href="#" ><span>Button</span></a>
+        <br>
+        <br>
+        <p class="grad-btn-code-title">Code:</p>
+        <br>
+        <pre class="grad-btn-code">
+          <code>
+            .animbtn {
+              box-sizing: border-box;
+              position: relative;
+              padding: 15px 30px;
+              border: 2px solid #111;
+              text-transform: uppercase;
+              text-decoration: none;
+              color: #111;
+              font-weight: 600;
+              font-size: 20px;
+            }
+            .animbtn:before {
+              content: '';
+              position: absolute;
+              top: 6px;
+              left: -2px;
+              width: calc(100% + 4px);
+              height: calc(100% - 12px);
+              background: #fff;
+              transition: 0.5s ease-in-out;
+              transform: scaleY(1);
+              transition-delay: 0.5s;
+            }
+            .animbtn:hover:before {
+              transform: scaleY(0);
+            }
+            .animbtn:after {
+              content: '';
+              position: absolute;
+              left: 6px;
+              top: -2px;
+              height: calc(100% + 4px);
+              width: calc(100% - 12px);
+              background: #fff;
+              transition: 0.5s ease-in-out;
+              transform: scaleX(1);
+            }
+            .animbtn:hover:after {
+              transform: scaleX(0);
+            }
+            .animbtn span {
+              position: relative;
+              z-index: 3;  
+            }
+          </code>
+        </pre>
+        <!-- Animated Button End -->
         <br>
         <p class="txt5" style="line-height: 40px;">
           That's it! I will add more buttons to this page in the future. Thanks for checking these buttons out! Note that you are free to use these buttons on your website/webpage without crediting me, or asking for permission.
