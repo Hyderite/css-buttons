@@ -16,7 +16,7 @@ p.fadein {
   -moz-animation: fadein 1.5s;
   -webkit-animation: fadein 1.5s;
   -o-animation: fadein 1.5s;
-  color: #000;
+  color: rgb(15, 14, 14);
 }
 
 @keyframes fadein {
