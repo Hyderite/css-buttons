@@ -3,8 +3,12 @@
   margin: auto;
 }
 
+
 .font {
   font-family: Montserrat;
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
 }
 
 p.fadein {
@@ -276,3 +280,597 @@ pre {
   opacity: 0;
   animation-fill-mode: forwards;
 }
+
+
+/* Bu Kısımda Yeni eklenmiş Olan butonlara ait css tasarımları yer almaktadır. */
+.btn3 {
+  background-color: #405d27;
+  border:none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Montserrat;
+  margin: 4px 2px;
+  -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0); 
+  box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0);
+  border-radius: 15px 50px;
+  width: 125px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s;
+  -webkit-animation: fadein 1.5s;
+  -o-animation: fadein 1.5s;
+  animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  -o-animation-delay: 2.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.btn3:hover {
+    background-color: #fff;
+    color: #000;
+    border: 4px solid green;
+}
+.btn4 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 0 9px #999;
+}
+
+.btn4:hover {background-color: #feb236}
+
+.btn4:active {
+  background-color: #feb236;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.btn5 {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  border-radius: 15px 50px 30px 5px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn5 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn5 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn5:hover span {
+  padding-right: 25px;
+}
+
+.btn5:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Animated Button */
+.animbtn {
+  box-sizing: border-box;
+  position: relative;
+  padding: 15px 30px;
+  border: 2px solid #111;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 20px;
+}
+.animbtn:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background:#f4511e ;
+  transition: 0.5s ease-in-out;
+  transform: scaleY(1);
+  transition-delay: 0.5s;
+}
+.animbtn:hover:before {
+  transform: scaleY(0);
+}
+.animbtn:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background: #fff;
+  transition: 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+.animbtn:hover:after {
+  transform: scaleX(0);
+}
+.animbtn span {
+  position: relative;
+  z-index: 3;  
+}
+/* End Animated Button */
+
+.cybr-btn + .cybr-btn {
+  margin-top: 2rem;
+}
+
+.cybr-btn {
+  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
+  --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
+  --primary-hue: 0;
+  --primary-lightness: 50;
+  --color: hsl(0, 0%, 100%);
+  --font-size: 26px;
+  --shadow-primary-hue: 180;
+  --label-size: 9px;
+  --shadow-secondary-hue: 60;
+  --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
+  --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+  --border: 4px;
+  --shimmy-distance: 5;
+  --clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
+  --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
+  --clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
+  --clip-four: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+  --clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+  --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
+  --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
+  font-family: 'Cyber', sans-serif;
+  color: var(--color);
+  cursor: pointer;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: var(--font-size);
+  outline: transparent;
+  letter-spacing: 2px;
+  position: relative;
+  font-weight: 700;
+  border: 0;
+  min-width: 300px;
+  height: 75px;
+  line-height: 75px;
+  transition: background 0.2s;
+}
+
+.cybr-btn:hover {
+  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
+}
+.cybr-btn:active {
+  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
+}
+
+.cybr-btn:after,
+.cybr-btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: var(--clip);
+  z-index: -1;
+}
+
+.cybr-btn:before {
+  background: var(--shadow-primary);
+  transform: translate(var(--border), 0);
+}
+
+.cybr-btn:after {
+  background: var(--primary);
+}
+
+.cybr-btn__tag {
+  position: absolute;
+  padding: 1px 4px;
+  letter-spacing: 1px;
+  line-height: 1;
+  bottom: -5%;
+  right: 5%;
+  font-weight: normal;
+  color: hsl(0, 0%, 0%);
+  font-size: var(--label-size);
+}
+
+.cybr-btn__glitch {
+  position: absolute;
+  top: calc(var(--border) * -1);
+  left: calc(var(--border) * -1);
+  right: calc(var(--border) * -1);
+  bottom: calc(var(--border) * -1);
+  background: var(--shadow-primary);
+  text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
+  clip-path: var(--clip);
+  animation: glitch 2s infinite;
+  display: none;
+}
+
+.cybr-btn:hover .cybr-btn__glitch {
+  display: block;
+}
+
+.cybr-btn__glitch:before {
+  content: '';
+  position: absolute;
+  top: calc(var(--border) * 1);
+  right: calc(var(--border) * 1);
+  bottom: calc(var(--border) * 1);
+  left: calc(var(--border) * 1);
+  clip-path: var(--clip);
+  background: var(--primary);
+  z-index: -1;
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--clip-one);
+  }
+  2%, 8% {
+    clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  6% {
+    clip-path: var(--clip-two);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  9% {
+    clip-path: var(--clip-two);
+    transform: translate(0, 0);
+  }
+  10% {
+    clip-path: var(--clip-three);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  13% {
+    clip-path: var(--clip-three);
+    transform: translate(0, 0);
+  }
+  14%, 21% {
+    clip-path: var(--clip-four);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  25% {
+    clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  30% {
+    clip-path: var(--clip-five);
+    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+  }
+  35%, 45% {
+    clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * -1%));
+  }
+  40% {
+    clip-path: var(--clip-six);
+    transform: translate(calc(var(--shimmy-distance) * 1%));
+  }
+  50% {
+    clip-path: var(--clip-six);
+    transform: translate(0, 0);
+  }
+  55% {
+    clip-path: var(--clip-seven);
+    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+  }
+  60% {
+    clip-path: var(--clip-seven);
+    transform: translate(0, 0);
+  }
+  31%, 61%, 100% {
+    clip-path: var(--clip-four);
+  }
+}
+
+
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+
+ 
+}
+
+.cont {
+  position: relative;
+  width: 16vw;
+  height: 8vw;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px black;
+  margin: 3vw 0;
+
+}
+.button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #F75780;
+  position: realtive;
+  border: 1px dashed yellow;
+  border-radius: 10px;
+  outline: none;
+  transition: box-shadow 0.3s linear;
+  box-shadow: inset 0px 0px 5px black, inset 0px 0px 0px #F7EA25;
+
+}
+
+.button:active {
+    box-shadow: inset 0px 0px 0px black, inset 0px 0px 105px #F7EA25;
+}
+.button:active .blob {
+  animation: none;
+}
+
+.blob {
+  position: relative;
+  top: 10%;
+  left: 0%;
+  width: 10vw;
+  height: 10vw;
+  fill: #1A87AB;
+  transform-origin: 50% 50%;
+  filter: drop-shadow(4px 4px 0 black);
+  animation: bump 5.5s ease infinite;
+
+  
+  
+}
+
+@keyframes bump {
+    0% {
+      transform: scale(1, 1) translateX(0px);
+    }
+    9% {
+      transform: scale(1.1, 0.9) translateY(20px);
+    }
+    28% {
+      transform: scale(0.7, 1.3) translateY(-100px) translateX(55px);
+    }
+    35% {
+      transform: scale(1, 1) translateY(20px);
+    }
+    50% {
+      transform: scale(1, 1.1);
+    }
+    60% {
+      transform: scale(1.1, 0.9) translateY(20px);
+    }
+    80% {
+      transform: scale(0.7, 1.3) translateY(-100px) translateX(-55px);
+    }
+    88% {
+      transform: scale(1, 1) translateY(20px);
+    }
+    100% {
+      transform: scale(1, 1) translateX(0px);
+    }
+  }
+
+.line {
+  position: absolute;
+  bottom: 20%;
+  width: 20vw;
+  height: 0.5vw;
+  background: white;
+  transform: rotate(-8deg);
+  box-shadow: 2px 2px 0px black;
+  animation: line 4s ease infinite reverse;
+}
+
+@keyframes line {
+    0% {
+      transform: rotate(-8deg);
+    }
+    9% {
+      transform: rotate(-8deg);
+    }
+    28% {
+      transform: rotate(28deg);
+    }
+    35% {
+      transform: rotate(20deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(-8deg);
+    }
+    80% {
+      transform: rotate(-12deg);
+    }
+
+    88% {
+      transform: rotate(-18deg);
+    }
+
+    100% {
+      transform: rotate(-8deg);
+    }
+  }
+
+.text {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  font-size: 4vw;
+  text-shadow: 2px 2px black;
+  font-family: 'Anton', sans-serif;
+
+
+  
+  
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+   
+
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+
+ 
+}
+
+.grad-btn-title:nth-child(1n) {
+  transform: rotate(8deg);
+  animation: shake 0.5s ease infinite;
+  color: #743ad5
+
+  }
+.grad-btn-title:nth-child(2n) {
+  transform: rotate(5deg);
+  animation: shake 0.5s ease-out infinite reverse;
+  color: white
+
+  }
+.grad-btn-title:nth-child(3n) {
+  transform: rotate(-2deg);
+  animation: shake 0.5s 0.1s ease infinite;
+ 
+
+  }
+
+.grad-btn-title:nth-child(4n) {
+    transform: rotate(-5deg);
+    animation: shake 0.5s ease-in infinite reverse;
+  }
+
+@keyframes shake {
+    0% {
+      transform: translateX(0) rotate(8deg);
+    }
+    50% {
+      transform: translateX(4px) rotate(-3deg);
+    }
+
+    100% {
+      transform: translateX(0) rotate(6deg);
+    }
+  }
+
+i {
+  color: #2867B2;
+  margin-top: 1vw
+}
+
+/* Son Action Button olan hover button. */
+a {
+  text-decoration: none;
+  border: 3px solid #743ad5;
+  color: transparent;
+  padding: 40px 80px;
+  font-size: 28px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+  border-radius:35px 25px;
+  position: relative;
+}
+a:before {
+  content: "Hover Buttons";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8639b7;
+  background: rgb(34, 34, 34);
+  border-radius:35px 25px;
+  font-size: 28px;
+  top: 0;
+  left: 100%;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(0) rotatey(0);
+  opacity: 0;
+}
+a:hover:before {
+  transform: scale(1) rotatey(360deg);
+  left: 0;
+  opacity: 1;
+}
+a:after {
+  content: "Hover Me";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8639b7;
+  background: rgb(34, 34, 34);
+  font-size: 28px;
+  top: 0;
+  left: 0;
+  border-radius:35px 25px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1) rotatey(0);
+  opacity: 1;
+}
+a:hover:after {
+  transform: scale(0) rotatey(360deg);
+  left: -100%;
+  opacity: 0;
+}
+
+
