@@ -3,6 +3,12 @@
   margin: auto;
 }
 
+.content {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 .font {
   font-family: Montserrat;
@@ -20,39 +26,39 @@ p.fadein {
 }
 
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .title {
@@ -84,7 +90,7 @@ p.fadein {
   font-size: 16px;
   font-family: Montserrat;
   margin: 4px 2px;
-  -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0); 
+  -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0);
   box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0);
   border-radius: 20px;
   width: 125px;
@@ -136,9 +142,7 @@ pre {
   border: 1px solid #ccc;
   border-radius: 4px;
   text-align: left;
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem;
 }
 
 .txt3 {
@@ -165,7 +169,7 @@ pre {
   font-size: 16px;
   font-family: Montserrat;
   margin: 4px 2px;
-  -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0); 
+  -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0);
   box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0);
   border-radius: 8px;
   width: 125px;
@@ -241,7 +245,7 @@ pre {
   font-family: Montserrat;
   margin: 4px 2px;
   box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0);
-  -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0); 
+  -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0);
   border-radius: 8px;
   width: 125px;
   height: 40px;
@@ -281,11 +285,10 @@ pre {
   animation-fill-mode: forwards;
 }
 
-
 /* Bu Kısımda Yeni eklenmiş Olan butonlara ait css tasarımları yer almaktadır. */
 .btn3 {
   background-color: #405d27;
-  border:none;
+  border: none;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -293,7 +296,7 @@ pre {
   font-size: 16px;
   font-family: Montserrat;
   margin: 4px 2px;
-  -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0); 
+  -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0);
   box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0);
   border-radius: 15px 50px;
   width: 125px;
@@ -313,9 +316,9 @@ pre {
 }
 
 .btn3:hover {
-    background-color: #fff;
-    color: #000;
-    border: 4px solid green;
+  background-color: #fff;
+  color: #000;
+  border: 4px solid green;
 }
 .btn4 {
   display: inline-block;
@@ -326,13 +329,15 @@ pre {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border: none;
   border-radius: 35px;
   box-shadow: 0 9px #999;
 }
 
-.btn4:hover {background-color: #feb236}
+.btn4:hover {
+  background-color: #feb236;
+}
 
 .btn4:active {
   background-color: #feb236;
@@ -344,7 +349,7 @@ pre {
   background-color: #f4511e;
   border: none;
   border-radius: 15px 50px 30px 5px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -362,7 +367,7 @@ pre {
 }
 
 .btn5 span:after {
-  content: '\00bb';
+  content: "\00bb";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -392,13 +397,13 @@ pre {
   font-size: 20px;
 }
 .animbtn:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 6px;
   left: -2px;
   width: calc(100% + 4px);
   height: calc(100% - 12px);
-  background:#f4511e ;
+  background: #f4511e;
   transition: 0.5s ease-in-out;
   transform: scaleY(1);
   transition-delay: 0.5s;
@@ -407,7 +412,7 @@ pre {
   transform: scaleY(0);
 }
 .animbtn:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 6px;
   top: -2px;
@@ -422,7 +427,7 @@ pre {
 }
 .animbtn span {
   position: relative;
-  z-index: 3;  
+  z-index: 3;
 }
 /* End Animated Button */
 
@@ -431,7 +436,11 @@ pre {
 }
 
 .cybr-btn {
-  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
+  --primary: hsl(
+    var(--primary-hue),
+    85%,
+    calc(var(--primary-lightness, 50) * 1%)
+  );
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
   --primary-hue: 0;
   --primary-lightness: 50;
@@ -441,17 +450,97 @@ pre {
   --label-size: 9px;
   --shadow-secondary-hue: 60;
   --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
-  --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+  --clip: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    95% 100%,
+    95% 90%,
+    85% 90%,
+    85% 100%,
+    8% 100%,
+    0 70%
+  );
   --border: 4px;
   --shimmy-distance: 5;
-  --clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
-  --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
-  --clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
-  --clip-four: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
-  --clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
-  --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
-  --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
-  font-family: 'Cyber', sans-serif;
+  --clip-one: polygon(
+    0 2%,
+    100% 2%,
+    100% 95%,
+    95% 95%,
+    95% 90%,
+    85% 90%,
+    85% 95%,
+    8% 95%,
+    0 70%
+  );
+  --clip-two: polygon(
+    0 78%,
+    100% 78%,
+    100% 100%,
+    95% 100%,
+    95% 90%,
+    85% 90%,
+    85% 100%,
+    8% 100%,
+    0 78%
+  );
+  --clip-three: polygon(
+    0 44%,
+    100% 44%,
+    100% 54%,
+    95% 54%,
+    95% 54%,
+    85% 54%,
+    85% 54%,
+    8% 54%,
+    0 54%
+  );
+  --clip-four: polygon(
+    0 0,
+    100% 0,
+    100% 0,
+    95% 0,
+    95% 0,
+    85% 0,
+    85% 0,
+    8% 0,
+    0 0
+  );
+  --clip-five: polygon(
+    0 0,
+    100% 0,
+    100% 0,
+    95% 0,
+    95% 0,
+    85% 0,
+    85% 0,
+    8% 0,
+    0 0
+  );
+  --clip-six: polygon(
+    0 40%,
+    100% 40%,
+    100% 85%,
+    95% 85%,
+    95% 85%,
+    85% 85%,
+    85% 85%,
+    8% 85%,
+    0 70%
+  );
+  --clip-seven: polygon(
+    0 63%,
+    100% 63%,
+    100% 80%,
+    95% 80%,
+    95% 80%,
+    85% 80%,
+    85% 80%,
+    8% 80%,
+    0 70%
+  );
+  font-family: "Cyber", sans-serif;
   color: var(--color);
   cursor: pointer;
   background: transparent;
@@ -469,15 +558,23 @@ pre {
 }
 
 .cybr-btn:hover {
-  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
+  --primary: hsl(
+    var(--primary-hue),
+    85%,
+    calc(var(--primary-lightness, 50) * 0.8%)
+  );
 }
 .cybr-btn:active {
-  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
+  --primary: hsl(
+    var(--primary-hue),
+    85%,
+    calc(var(--primary-lightness, 50) * 0.6%)
+  );
 }
 
 .cybr-btn:after,
 .cybr-btn:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -526,7 +623,7 @@ pre {
 }
 
 .cybr-btn__glitch:before {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(var(--border) * 1);
   right: calc(var(--border) * 1);
@@ -541,7 +638,8 @@ pre {
   0% {
     clip-path: var(--clip-one);
   }
-  2%, 8% {
+  2%,
+  8% {
     clip-path: var(--clip-two);
     transform: translate(calc(var(--shimmy-distance) * -1%), 0);
   }
@@ -561,7 +659,8 @@ pre {
     clip-path: var(--clip-three);
     transform: translate(0, 0);
   }
-  14%, 21% {
+  14%,
+  21% {
     clip-path: var(--clip-four);
     transform: translate(calc(var(--shimmy-distance) * 1%), 0);
   }
@@ -573,7 +672,8 @@ pre {
     clip-path: var(--clip-five);
     transform: translate(calc(var(--shimmy-distance) * -1%), 0);
   }
-  35%, 45% {
+  35%,
+  45% {
     clip-path: var(--clip-six);
     transform: translate(calc(var(--shimmy-distance) * -1%));
   }
@@ -593,12 +693,12 @@ pre {
     clip-path: var(--clip-seven);
     transform: translate(0, 0);
   }
-  31%, 61%, 100% {
+  31%,
+  61%,
+  100% {
     clip-path: var(--clip-four);
   }
 }
-
-
 
 .bg {
   width: 100vw;
@@ -607,9 +707,7 @@ pre {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-
- 
+  font-family: "Montserrat", sans-serif;
 }
 
 .cont {
@@ -620,7 +718,6 @@ pre {
   border-radius: 10px;
   box-shadow: 0px 0px 15px black;
   margin: 3vw 0;
-
 }
 .button {
   width: 100%;
@@ -628,18 +725,17 @@ pre {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-color: #F75780;
+  background-color: #f75780;
   position: realtive;
   border: 1px dashed yellow;
   border-radius: 10px;
   outline: none;
   transition: box-shadow 0.3s linear;
-  box-shadow: inset 0px 0px 5px black, inset 0px 0px 0px #F7EA25;
-
+  box-shadow: inset 0px 0px 5px black, inset 0px 0px 0px #f7ea25;
 }
 
 .button:active {
-    box-shadow: inset 0px 0px 0px black, inset 0px 0px 105px #F7EA25;
+  box-shadow: inset 0px 0px 0px black, inset 0px 0px 105px #f7ea25;
 }
 .button:active .blob {
   animation: none;
@@ -651,44 +747,41 @@ pre {
   left: 0%;
   width: 10vw;
   height: 10vw;
-  fill: #1A87AB;
+  fill: #1a87ab;
   transform-origin: 50% 50%;
   filter: drop-shadow(4px 4px 0 black);
   animation: bump 5.5s ease infinite;
-
-  
-  
 }
 
 @keyframes bump {
-    0% {
-      transform: scale(1, 1) translateX(0px);
-    }
-    9% {
-      transform: scale(1.1, 0.9) translateY(20px);
-    }
-    28% {
-      transform: scale(0.7, 1.3) translateY(-100px) translateX(55px);
-    }
-    35% {
-      transform: scale(1, 1) translateY(20px);
-    }
-    50% {
-      transform: scale(1, 1.1);
-    }
-    60% {
-      transform: scale(1.1, 0.9) translateY(20px);
-    }
-    80% {
-      transform: scale(0.7, 1.3) translateY(-100px) translateX(-55px);
-    }
-    88% {
-      transform: scale(1, 1) translateY(20px);
-    }
-    100% {
-      transform: scale(1, 1) translateX(0px);
-    }
+  0% {
+    transform: scale(1, 1) translateX(0px);
   }
+  9% {
+    transform: scale(1.1, 0.9) translateY(20px);
+  }
+  28% {
+    transform: scale(0.7, 1.3) translateY(-100px) translateX(55px);
+  }
+  35% {
+    transform: scale(1, 1) translateY(20px);
+  }
+  50% {
+    transform: scale(1, 1.1);
+  }
+  60% {
+    transform: scale(1.1, 0.9) translateY(20px);
+  }
+  80% {
+    transform: scale(0.7, 1.3) translateY(-100px) translateX(-55px);
+  }
+  88% {
+    transform: scale(1, 1) translateY(20px);
+  }
+  100% {
+    transform: scale(1, 1) translateX(0px);
+  }
+}
 
 .line {
   position: absolute;
@@ -702,36 +795,36 @@ pre {
 }
 
 @keyframes line {
-    0% {
-      transform: rotate(-8deg);
-    }
-    9% {
-      transform: rotate(-8deg);
-    }
-    28% {
-      transform: rotate(28deg);
-    }
-    35% {
-      transform: rotate(20deg);
-    }
-    50% {
-      transform: rotate(10deg);
-    }
-    60% {
-      transform: rotate(-8deg);
-    }
-    80% {
-      transform: rotate(-12deg);
-    }
-
-    88% {
-      transform: rotate(-18deg);
-    }
-
-    100% {
-      transform: rotate(-8deg);
-    }
+  0% {
+    transform: rotate(-8deg);
   }
+  9% {
+    transform: rotate(-8deg);
+  }
+  28% {
+    transform: rotate(28deg);
+  }
+  35% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-8deg);
+  }
+  80% {
+    transform: rotate(-12deg);
+  }
+
+  88% {
+    transform: rotate(-18deg);
+  }
+
+  100% {
+    transform: rotate(-8deg);
+  }
+}
 
 .text {
   display: flex;
@@ -739,19 +832,13 @@ pre {
   top: 20%;
   font-size: 4vw;
   text-shadow: 2px 2px black;
-  font-family: 'Anton', sans-serif;
-
-
-  
-  
+  font-family: "Anton", sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
-   
-
 }
 
 .bg {
@@ -762,51 +849,45 @@ pre {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-
- 
+  font-family: "Montserrat", sans-serif;
 }
 
 .grad-btn-title:nth-child(1n) {
   transform: rotate(8deg);
   animation: shake 0.5s ease infinite;
-  color: #743ad5
-
-  }
+  color: #743ad5;
+}
 .grad-btn-title:nth-child(2n) {
   transform: rotate(5deg);
   animation: shake 0.5s ease-out infinite reverse;
-  color: white
-
-  }
+  color: white;
+}
 .grad-btn-title:nth-child(3n) {
   transform: rotate(-2deg);
   animation: shake 0.5s 0.1s ease infinite;
- 
-
-  }
+}
 
 .grad-btn-title:nth-child(4n) {
-    transform: rotate(-5deg);
-    animation: shake 0.5s ease-in infinite reverse;
-  }
+  transform: rotate(-5deg);
+  animation: shake 0.5s ease-in infinite reverse;
+}
 
 @keyframes shake {
-    0% {
-      transform: translateX(0) rotate(8deg);
-    }
-    50% {
-      transform: translateX(4px) rotate(-3deg);
-    }
-
-    100% {
-      transform: translateX(0) rotate(6deg);
-    }
+  0% {
+    transform: translateX(0) rotate(8deg);
+  }
+  50% {
+    transform: translateX(4px) rotate(-3deg);
   }
 
+  100% {
+    transform: translateX(0) rotate(6deg);
+  }
+}
+
 i {
-  color: #2867B2;
-  margin-top: 1vw
+  color: #2867b2;
+  margin-top: 1vw;
 }
 
 /* Son Action Button olan hover button. */
@@ -819,7 +900,7 @@ a {
   font-family: sans-serif;
   letter-spacing: 5px;
   transition: all 0.5s;
-  border-radius:35px 25px;
+  border-radius: 35px 25px;
   position: relative;
 }
 a:before {
@@ -829,7 +910,7 @@ a:before {
   align-items: center;
   color: #8639b7;
   background: rgb(34, 34, 34);
-  border-radius:35px 25px;
+  border-radius: 35px 25px;
   font-size: 28px;
   top: 0;
   left: 100%;
@@ -857,7 +938,7 @@ a:after {
   font-size: 28px;
   top: 0;
   left: 0;
-  border-radius:35px 25px;
+  border-radius: 35px 25px;
   font-family: sans-serif;
   letter-spacing: 5px;
   transition: all 1s;
@@ -872,5 +953,3 @@ a:hover:after {
   left: -100%;
   opacity: 0;
 }
-
-

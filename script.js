@@ -1,3 +1,3 @@
 function linkToWebsite() {
-  window.open("https://hyderite.repl.co")
+  window.open("https://hyderite.repl.co");
 }
