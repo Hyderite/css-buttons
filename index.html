@@ -14,24 +14,28 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/atom-one-dark.min.css"
+    />
   </head>
   <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
     <script src="script.js"></script>
-    <div class="content">
-      <div class="center font">
-        <p class="fadein title">CSS Buttons</p>
-        <br />
-        <br />
-        <p class="txt1">1. From black to white</p>
-        <br />
-        <br />
-        <button class="btn1">button</button>
-        <br />
-        <br />
-        <p class="txt2">Code:</p>
-        <br />
-        <pre class="txt2">
-         <code>
+    <div class="center font">
+      <p class="fadein title">CSS Buttons</p>
+      <br />
+      <br />
+      <p class="txt1">1. From black to white</p>
+      <br />
+      <br />
+      <button class="btn1">button</button>
+      <br />
+      <br />
+      <p class="txt2">Code:</p>
+      <br />
+      <pre class="txt2">
+         <code class="language-css">
            .btn1 {
               background-color: #000;
               border: none;
@@ -58,17 +62,17 @@
             }
          </code>
        </pre>
-        <br />
-        <br />
-        <p class="txt3">2. Darker on hover</p>
-        <br />
-        <br />
-        <button class="btn2">button</button>
-        <br />
-        <br />
-        <p class="txt4">Code:</p>
-        <br />
-        <pre class="txt4">
+      <br />
+      <br />
+      <p class="txt3">2. Darker on hover</p>
+      <br />
+      <br />
+      <button class="btn2">button</button>
+      <br />
+      <br />
+      <p class="txt4">Code:</p>
+      <br />
+      <pre class="txt4">
          <code>
            .btn2 {
               background-color: #ff0000;
@@ -95,17 +99,17 @@
          </code>
         </pre>
 
-        <br />
-        <br />
-        <p class="grad-btn-title">3. Hover Gradient</p>
-        <br />
-        <br />
-        <button class="grad-btn">Click me!</button>
-        <br />
-        <br />
-        <p class="grad-btn-code-title">Code:</p>
-        <br />
-        <pre class="grad-btn-code">
+      <br />
+      <br />
+      <p class="grad-btn-title">3. Hover Gradient</p>
+      <br />
+      <br />
+      <button class="grad-btn">Click me!</button>
+      <br />
+      <br />
+      <p class="grad-btn-code-title">Code:</p>
+      <br />
+      <pre class="grad-btn-code">
          <code>
            .grad-btn {
               background-image: linear-gradient(to bottom left, #743ad5, #d53a9d);
@@ -134,161 +138,161 @@
             }
          </code>
         </pre>
-        <br />
-        <br />
+      <br />
+      <br />
 
-        <!-- Yeni Eklenmiş Olan Issues çalışması sonrası -->
+      <!-- Yeni Eklenmiş Olan Issues çalışması sonrası -->
 
-        <br />
-        <br />
-        <p class="txt6">1. New Action Button Update</p>
-        <br />
-        <br />
-        <button class="btn3">button</button>
-        <br />
-        <br />
-        <p class="txt7">Code:</p>
-        <br />
-        <pre class="txt7">
+      <br />
+      <br />
+      <p class="txt6">1. New Action Button Update</p>
+      <br />
+      <br />
+      <button class="btn3">button</button>
+      <br />
+      <br />
+      <p class="txt7">Code:</p>
+      <br />
+      <pre class="txt7">
          <code>
            .btn3 {
-              background-color: #405d27;
-              border:none;
-              color: white;
-              text-align: center;
-              text-decoration: none;
-              display: inline-block;
-              font-size: 16px;
-              font-family: Montserrat;
-              margin: 4px 2px;
-              -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0); 
-              box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0);
-              border-radius: 15px 50px;
-              width: 125px;
-              height: 60px;
-              cursor: pointer;
-              transition: 0.3s;
-              animation: fadein 1.5s;
-              -moz-animation: fadein 1.5s;
-              -webkit-animation: fadein 1.5s;
-              -o-animation: fadein 1.5s;
-              animation-delay: 2.5s;
-              -moz-animation-delay: 2.5s;
-              -webkit-animation-delay: 2.5s;
-              -o-animation-delay: 2.5s;
-              opacity: 0;
-              animation-fill-mode: forwards;
-            }
+        background-color: #405d27;
+        border:none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: Montserrat;
+        margin: 4px 2px;
+        -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0); 
+        box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0);
+        border-radius: 15px 50px;
+        width: 125px;
+        height: 60px;
+        cursor: pointer;
+        transition: 0.3s;
+        animation: fadein 1.5s;
+        -moz-animation: fadein 1.5s;
+        -webkit-animation: fadein 1.5s;
+        -o-animation: fadein 1.5s;
+        animation-delay: 2.5s;
+        -moz-animation-delay: 2.5s;
+        -webkit-animation-delay: 2.5s;
+        -o-animation-delay: 2.5s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+      }
 
-          .btn3:hover {
-            background-color: #fff;
-            color: #000;
-            border: 4px solid green;
-          }
+      .btn3:hover {
+        background-color: #fff;
+        color: #000;
+        border: 4px solid green;
+      }
          </code>
        </pre>
-        <br />
-        <br />
-        <p class="txt9">2. New Action Button Update</p>
-        <br />
-        <br />
-        <button class="btn4">Click Me</button>
-        <br />
-        <br />
-        <p class="txt10">Code:</p>
-        <br />
-        <pre class="txt10">
+      <br />
+      <br />
+      <p class="txt9">2. New Action Button Update</p>
+      <br />
+      <br />
+      <button class="btn4">Click Me</button>
+      <br />
+      <br />
+      <p class="txt10">Code:</p>
+      <br />
+      <pre class="txt10">
          <code>
            .btn4 {
-              display: inline-block;
-              padding: 15px 25px;
-              font-size: 24px;
-              cursor: pointer;
-              text-align: center;
-              text-decoration: none;
-              outline: none;
-              color: #fff;
-              background-color: #4CAF50;
-              border: none;
-              border-radius: 35px;
-              box-shadow: 0 9px #999;
-            }
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 35px;
+        box-shadow: 0 9px #999;
+      }
 
-            .btn4:hover {background-color: #feb236}
+      .btn4:hover {background-color: #feb236}
 
-            .btn4:active {
-              background-color: #feb236;
-              box-shadow: 0 5px #666;
-              transform: translateY(4px);
-            }
+      .btn4:active {
+        background-color: #feb236;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
          </code>
        </pre>
-        <br />
-        <br />
-        <p class="txt11">3. New Action Button Update</p>
-        <br />
-        <br />
-        <button class="btn5"><span>Hover </span></button>
-        <br />
-        <br />
-        <p class="txt12">Code:</p>
-        <br />
-        <pre class="txt12">
+      <br />
+      <br />
+      <p class="txt11">3. New Action Button Update</p>
+      <br />
+      <br />
+      <button class="btn5"><span>Hover </span></button>
+      <br />
+      <br />
+      <p class="txt12">Code:</p>
+      <br />
+      <pre class="txt12">
          <code>
            .btn5 {
-              border-radius: 4px;
-              background-color: #f4511e;
-              border: none;
-              border-radius: 15px 50px 30px 5px;
-              color: #FFFFFF;
-              text-align: center;
-              font-size: 28px;
-              padding: 20px;
-              width: 150px;
-              transition: all 0.5s;
-              cursor: pointer;
-              margin: 5px;
-            }
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        border-radius: 15px 50px 30px 5px;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
 
-            .btn5 span {
-              cursor: pointer;
-              display: inline-block;
-              position: relative;
-              transition: 0.5s;
-            }
-          
-            .btn5 span:after {
-              content: '\00bb';
-              position: absolute;
-              opacity: 0;
-              top: 0;
-              right: -20px;
-              transition: 0.5s;
-            }
-          
-            .btn5:hover span {
-              padding-right: 25px;
-            }
-          
-            .btn5:hover span:after {
-              opacity: 1;
-              right: 0;
-            }
+      .btn5 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .btn5 span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .btn5:hover span {
+        padding-right: 25px;
+      }
+
+      .btn5:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
          </code>
        </pre>
-        <br />
-        <br />
-        <!-- Animated Button Start -->
-        <br />
-        <p class="grad-btn-title">4. Animated Button</p>
-        <br />
-        <br />
-        <a class="animbtn" href="#"><span>Button</span></a>
-        <br />
-        <br />
-        <p class="grad-btn-code-title">Code:</p>
-        <br />
-        <pre class="grad-btn-code">
+      <br />
+      <br />
+      <!-- Animated Button Start -->
+      <br />
+      <p class="grad-btn-title">4. Animated Button</p>
+      <br />
+      <br />
+      <a class="animbtn" href="#"><span>Button</span></a>
+      <br />
+      <br />
+      <p class="grad-btn-code-title">Code:</p>
+      <br />
+      <pre class="grad-btn-code">
           <code>
             .animbtn {
               box-sizing: border-box;
@@ -336,212 +340,214 @@
             }
           </code>
         </pre>
-        <!-- Animated Button End -->
-        <br /><br />
-        <!-- Animated Button Start -->
-        <br />
-        <p class="grad-btn-title">5. Animated Button</p>
-        <br />
-        <br />
-        <button class="cybr-btn">
-          Glitch Buttons<span aria-hidden>_</span>
-          <span aria-hidden class="cybr-btn__glitch">Buttons_</span>
-          <span aria-hidden class="cybr-btn__tag">R25</span>
-        </button>
-        <br />
-        <br />
-        <p class="grad-btn-code-title">Code:</p>
-        <br />
-        <pre class="grad-btn-code">
+      <!-- Animated Button End -->
+      <br /><br />
+      <!-- Animated Button Start -->
+      <br />
+      <p class="grad-btn-title">5. Animated Button</p>
+      <br />
+      <br />
+      <button class="cybr-btn">
+        Glitch Buttons<span aria-hidden>_</span>
+        <span aria-hidden class="cybr-btn__glitch">Buttons_</span>
+        <span aria-hidden class="cybr-btn__tag">R25</span>
+      </button>
+      <br />
+      <br />
+      <p class="grad-btn-code-title">Code:</p>
+      <br />
+      <pre class="grad-btn-code">
           <code>
-            button,
-            button::after {
-              width: 380px;
-              height: 86px;
-              font-size: 36px;
-              font-family: "Bebas Neue", cursive;
-              background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
-              border: 0;
-              color: #fff;
-              letter-spacing: 3px;
-              line-height: 88px;
-              box-shadow: 6px 0px 0px #00e6f6;
-              outline: transparent;
-              position: relative;
-            }
-            button::after {
-              --slice-0: inset(50% 50% 50% 50%);
-              --slice-1: inset(80% -6px 0 0);
-              --slice-2: inset(50% -6px 30% 0);
-              --slice-3: inset(10% -6px 85% 0);
-              --slice-4: inset(40% -6px 43% 0);
-              --slice-5: inset(80% -6px 5% 0);
-              content: "AVAILABLE NOW";
-              display: block;
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              background: linear-gradient(
-                45deg,
-                transparent 3%,
-                #00e6f6 3%,
-                #00e6f6 5%,
-                #ff013c 5%
-              );
-              text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
-              clip-path: var(--slice-0);
-            }
-            button:hover::after {
-              animation: 1s glitch;
-              animation-timing-function: steps(2, end);
-            }
-            @keyframes glitch {
-              0% {
-                clip-path: var(--slice-1);
-                transform: translate(-20px, -10px);
-              }
-              10% {
-                clip-path: var(--slice-3);
-                transform: translate(10px, 10px);
-              }
-              20% {
-                clip-path: var(--slice-1);
-                transform: translate(-10px, 10px);
-              }
-              30% {
-                clip-path: var(--slice-3);
-                transform: translate(0px, 5px);
-              }
-              40% {
-                clip-path: var(--slice-2);
-                transform: translate(-5px, 0px);
-              }
-              50% {
-                clip-path: var(--slice-3);
-                transform: translate(5px, 0px);
-              }
-              60% {
-                clip-path: var(--slice-4);
-                transform: translate(5px, 10px);
-              }
-              70% {
-                clip-path: var(--slice-2);
-                transform: translate(-10px, 10px);
-              }
-              80% {
-                clip-path: var(--slice-5);
-                transform: translate(20px, -10px);
-              }
-              90% {
-                clip-path: var(--slice-1);
-                transform: translate(-10px, 0px);
-              }
-              100% {
-                clip-path: var(--slice-1);
-                transform: translate(0);
-              }
-            }
+      button, button::after {
+          width: 380px;
+          height: 86px;
+          font-size: 36px;
+          font-family: 'Bebas Neue', cursive;
+          background: linear-gradient(45deg, 
+                    transparent 5%, #FF013C 5%);
+          border: 0;
+          color: #fff;
+          letter-spacing: 3px;
+          line-height: 88px;
+          box-shadow: 6px 0px 0px #00E6F6;
+          outline: transparent;
+          position: relative;
+        }
+
+        button::after {
+          --slice-0: inset(50% 50% 50% 50%);
+          --slice-1: inset(80% -6px 0 0);
+          --slice-2: inset(50% -6px 30% 0);
+          --slice-3: inset(10% -6px 85% 0);
+          --slice-4: inset(40% -6px 43% 0);
+          --slice-5: inset(80% -6px 5% 0);
+          
+          content: 'AVAILABLE NOW';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(45deg, 
+                    transparent 3%, #00E6F6 3%,
+          #00E6F6 5%, #FF013C 5%);
+          text-shadow: -3px -3px 0px #F8F005,
+                     3px 3px 0px #00E6F6;
+          clip-path: var(--slice-0);
+        }
+
+        button:hover::after {
+          animation: 1s glitch;
+          animation-timing-function: steps(2, end);
+        }
+
+        @keyframes glitch {
+          0% {
+          clip-path: var(--slice-1);
+          transform: translate(-20px, -10px);
+          }
+          10% {
+          clip-path: var(--slice-3);
+          transform: translate(10px, 10px);
+          }
+          20% {
+          clip-path: var(--slice-1);
+          transform: translate(-10px, 10px);
+          }
+          30% {
+          clip-path: var(--slice-3);
+          transform: translate(0px, 5px);
+          }
+          40% {
+          clip-path: var(--slice-2);
+          transform: translate(-5px, 0px);
+          }
+          50% {
+          clip-path: var(--slice-3);
+          transform: translate(5px, 0px);
+          }
+          60% {
+          clip-path: var(--slice-4);
+          transform: translate(5px, 10px);
+          }
+          70% {
+          clip-path: var(--slice-2);
+          transform: translate(-10px, 10px);
+          }
+          80% {
+          clip-path: var(--slice-5);
+          transform: translate(20px, -10px);
+          }
+          90% {
+          clip-path: var(--slice-1);
+          transform: translate(-10px, 0px);
+          }
+          100% {
+          clip-path: var(--slice-1);
+          transform: translate(0);
+          }
+        }
+          </code>
+        </pre>
+      <!-- Animated Button End -->
+      <br /><br />
+
+      <!-- Animated Button Start -->
+      <br />
+      <p class="grad-btn-title">6. Animated Button</p>
+      <br />
+      <br />
+      <a href="#">Hover Buttons</a>
+      <br /><br /><br />
+      <br /><br /><br />
+      <p class="grad-btn-code-title">Code:</p>
+      <br /><br />
+      <pre class="grad-btn-code">
+          <code>
+      a {
+        text-decoration: none;
+        border: 3px solid #743ad5;
+        color: transparent;
+        padding: 40px 80px;
+        font-size: 28px;
+        font-family: sans-serif;
+        letter-spacing: 5px;
+        transition: all 0.5s;
+        border-radius:35px 25px;
+        position: relative;
+      }
+      a:before {
+        content: "Hover Buttons";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #8639b7;
+        background: rgb(34, 34, 34);
+        border-radius:35px 25px;
+        font-size: 28px;
+        top: 0;
+        left: 100%;
+        font-family: sans-serif;
+        letter-spacing: 5px;
+        transition: all 1s;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transform: scale(0) rotatey(0);
+        opacity: 0;
+      }
+      a:hover:before {
+        transform: scale(1) rotatey(360deg);
+        left: 0;
+        opacity: 1;
+      }
+      a:after {
+        content: "Hover Me";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #8639b7;
+        background: rgb(34, 34, 34);
+        font-size: 28px;
+        top: 0;
+        left: 0;
+        border-radius:35px 25px;
+        font-family: sans-serif;
+        letter-spacing: 5px;
+        transition: all 1s;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transform: scale(1) rotatey(0);
+        opacity: 1;
+      }
+      a:hover:after {
+        transform: scale(0) rotatey(360deg);
+        left: -100%;
+        opacity: 0;
+      }
+
+
 
           </code>
         </pre>
-        <!-- Animated Button End -->
-        <br /><br />
+      <!-- Animated Button End -->
+      <br /><br />
 
-        <!-- Animated Button Start -->
-        <br />
-        <p class="grad-btn-title">6. Animated Button</p>
-        <br />
-        <br />
-        <a href="#">Hover Buttons</a>
-        <br /><br /><br />
-        <br /><br /><br />
-        <p class="grad-btn-code-title">Code:</p>
-        <br /><br />
-        <pre class="grad-btn-code">
-          <code>
-            a {
-              text-decoration: none;
-              border: 3px solid #743ad5;
-              color: transparent;
-              padding: 40px 80px;
-              font-size: 28px;
-              font-family: sans-serif;
-              letter-spacing: 5px;
-              transition: all 0.5s;
-              border-radius:35px 25px;
-              position: relative;
-            }
-            a:before {
-              content: "Hover Buttons";
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: #8639b7;
-              background: rgb(34, 34, 34);
-              border-radius:35px 25px;
-              font-size: 28px;
-              top: 0;
-              left: 100%;
-              font-family: sans-serif;
-              letter-spacing: 5px;
-              transition: all 1s;
-              height: 100%;
-              width: 100%;
-              position: absolute;
-              transform: scale(0) rotatey(0);
-              opacity: 0;
-            }
-            a:hover:before {
-              transform: scale(1) rotatey(360deg);
-              left: 0;
-              opacity: 1;
-            }
-            a:after {
-              content: "Hover Me";
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: #8639b7;
-              background: rgb(34, 34, 34);
-              font-size: 28px;
-              top: 0;
-              left: 0;
-              border-radius:35px 25px;
-              font-family: sans-serif;
-              letter-spacing: 5px;
-              transition: all 1s;
-              height: 100%;
-              width: 100%;
-              position: absolute;
-              transform: scale(1) rotatey(0);
-              opacity: 1;
-            }
-            a:hover:after {
-              transform: scale(0) rotatey(360deg);
-              left: -100%;
-              opacity: 0;
-            }
-          </code>
-        </pre>
-        <!-- Animated Button End -->
-        <br /><br />
-
-        <p class="txt5" style="line-height: 40px">
-          That's it! I will add more buttons to this page in the future. Thanks
-          for checking these buttons out! Note that you are free to use these
-          buttons on your website/webpage without crediting me, or asking for
-          permission.
-        </p>
-        <br />
-        <p class="txt5">
-          My profile:
-          <u onclick="linkToWebsite()" style="cursor: pointer; color: blue"
-            >https://hyderite.repl.co</u
-          >
-        </p>
-      </div>
+      <p class="txt5" style="line-height: 40px">
+        That's it! I will add more buttons to this page in the future. Thanks
+        for checking these buttons out! Note that you are free to use these
+        buttons on your website/webpage without crediting me, or asking for
+        permission.
+      </p>
+      <br />
+      <p class="txt5">
+        My profile:
+        <u onclick="linkToWebsite()" style="cursor: pointer; color: blue"
+          >https://hyderite.repl.co</u
+        >
+      </p>
     </div>
   </body>
 </html>
